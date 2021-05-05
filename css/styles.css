@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #101734;
+  --color-secondary: #1b1e51;
+  --color-accent: #332fba;
+  --color-headings: #d2d5e8;
+  --color-body: #7c80a4;
+
+  --button-dark: #1d224d;
+  --button-light: #fffefe;
+}
