@@ -1,3 +1,7 @@
+/* INDEX */
+/* Typography */
+/* Links */
+
 :root {
   --color-primary: #101734;
   --color-secondary: #1b1e51;
@@ -8,6 +12,8 @@
   --button-dark: #1d224d;
   --button-light: #fffefe;
 }
+
+/* TYPOGRAPHY */
 
 html {
   font-size: 62.5%;
@@ -62,4 +68,16 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
