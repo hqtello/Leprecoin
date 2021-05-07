@@ -2,15 +2,19 @@
 /* Typography */
 /* Links */
 /* Lists */
+/* Icons */
 /* Buttons */
 /* Inputs */
 
 :root {
   --color-primary: #101734;
-  --color-secondary: #1b1e51;
+  --color-secondary: #292c6b;
   --color-accent: #332fba;
   --color-headings: #d2d5e8;
   --color-body: #7c80a4;
+  --color-background: #e3e5f1;
+
+  --border-radius: 5px;
 
   --button-dark: #1d224d;
   --button-light: #fffefe;
@@ -109,9 +113,32 @@ ul {
   margin-bottom: 1rem;
 }
 
+/* ICONS */
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon--dark {
+  fill: var(--color-primary);
+}
+
+.icon--light {
+  fill: var(--color-background);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  background: var(--color-primary);
+}
+
 /* BUTTONS */
 .button {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
   font-family: "Teko", sans-serif;
@@ -170,7 +197,7 @@ ul {
 
 /* INPUTS */
 .input {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border: 1px solid var(--color-body);
   color: var(--color-primary);
   font-family: "Lato", sans-serif;
@@ -182,6 +209,33 @@ ul {
 
 ::placeholder {
   color: var(--color-body);
+}
+
+.input--form {
+  background: var(--color-headings);
+}
+
+.input--form::placeholder {
+  color: var(--color-secondary);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-body);
+  background: var(--color-background);
+}
+
+.input-group .input {
+  border: 0;
+  flex: 1;
+  background: var(--color-background);
+}
+
+.input-group .icon-container {
+  margin: 3px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
