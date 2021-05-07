@@ -1,6 +1,8 @@
 /* INDEX */
 /* Typography */
 /* Links */
+/* Lists */
+/* Buttons */
 
 :root {
   --color-primary: #101734;
@@ -11,6 +13,13 @@
 
   --button-dark: #1d224d;
   --button-light: #fffefe;
+  --button-letter-spacing: 2px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 /* TYPOGRAPHY */
@@ -95,4 +104,63 @@ ul {
 
 .list__item {
   margin-bottom: 1rem;
+}
+
+/* BUTTONS */
+.button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: var(--button-letter-spacing);
+  margin: 1rem 0;
+  outline: none;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button--block {
+  display: block;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  box-shadow: 0 0 5px 2px var(--color-primary);
+  color: var(--color-headings);
+}
+
+.button--primary:hover {
+  background: var(--color-headings);
+  color: var(--color-primary);
+}
+
+.button--accent {
+  background: var(--color-accent);
+  color: var(--color-headings);
+}
+
+.button--accent:hover {
+  background: var(--color-headings);
+  color: var(--color-secondary);
+}
+
+.button--light {
+  background: var(--color-headings);
+  color: var(--color-secondary);
+}
+
+.button--light:hover {
+  background: var(--color-secondary);
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.8rem;
+  }
 }
