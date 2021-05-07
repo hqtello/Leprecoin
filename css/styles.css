@@ -24,6 +24,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+  background: var(--color-primary);
 }
 
 h1,
@@ -80,4 +81,18 @@ a {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+/* LISTS */
+ul {
+  padding: 0;
+}
+
+.list {
+  color: var(--color-headings);
+  list-style: none;
+}
+
+.list__item {
+  margin-bottom: 1rem;
 }
