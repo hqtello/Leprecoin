@@ -128,6 +128,11 @@ ul {
   fill: var(--color-background);
 }
 
+.icon--card {
+  width: 120px;
+  height: 120px;
+}
+
 .icon-container {
   display: flex;
   align-items: center;
@@ -168,6 +173,19 @@ ul {
 .button--primary:hover {
   background: var(--color-headings);
   color: var(--color-primary);
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+  box-shadow: 0 0 5px 2px var(--color-secondary);
+  color: var(--color-headings);
+  border: 3px solid var(--color-accent);
+  margin: 20px 0;
+}
+
+.button--secondary:hover {
+  background: var(--color-headings);
+  color: var(--color-secondary);
 }
 
 .button--accent {
@@ -257,6 +275,30 @@ ul {
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+}
+
+.card--icon {
+  text-align: left;
+  background: var(--color-secondary);
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 0 15px 2px rgb(49, 49, 151);
+}
+
+.card--icon .card__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.card__header {
+  text-align: center;
+}
+
+.card__body {
+  color: var(--color-headings);
+  letter-spacing: 1.2px;
+  line-height: 1.5;
 }
 
 .card h2 {
