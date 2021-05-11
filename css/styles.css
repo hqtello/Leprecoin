@@ -15,7 +15,7 @@
   --color-headings: #d2d5e8;
   --color-body: #7c80a4;
   --color-background: #e3e5f1;
-  --color-cyberpunk: rgb(0, 170, 142);
+  --color-cyberpunk: #00aa8e;
 
   --border-radius: 5px;
 
@@ -358,6 +358,33 @@ h3 {
   padding-left: 35px;
 }
 
+.card__image {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.card--image {
+  background: var(--color-background);
+}
+
+.card--image .card__heading {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.card--image .card__body {
+  text-align: left;
+  color: var(--color-primary);
+}
+
+.card--image .date-time {
+  color: var(--color-body);
+}
+
 .flex--row .card__heading {
   margin-left: 10px;
 }
@@ -366,4 +393,9 @@ h3 {
 .flex--row {
   display: flex;
   align-items: center;
+}
+
+.date-time {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 3px;
 }
