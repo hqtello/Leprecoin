@@ -6,6 +6,7 @@
 /* Buttons */
 /* Inputs */
 /* Cards */
+/* General */
 
 :root {
   --color-primary: #101734;
@@ -14,6 +15,7 @@
   --color-headings: #d2d5e8;
   --color-body: #7c80a4;
   --color-background: #e3e5f1;
+  --color-cyberpunk: rgb(0, 170, 142);
 
   --border-radius: 5px;
 
@@ -126,6 +128,10 @@ ul {
 
 .icon--light {
   fill: var(--color-background);
+}
+
+.icon--cyberpunk {
+  fill: var(--color-cyberpunk);
 }
 
 .icon--card {
@@ -346,4 +352,18 @@ h3 {
   position: absolute;
   font-size: 1.5rem;
   bottom: 0;
+}
+
+.card__content {
+  padding-left: 35px;
+}
+
+.flex--row .card__heading {
+  margin-left: 10px;
+}
+
+/* GENERAL */
+.flex--row {
+  display: flex;
+  align-items: center;
 }
