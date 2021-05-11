@@ -36,6 +36,7 @@
 
 html {
   font-size: 62.5%;
+  padding: 30px;
 }
 
 body {
@@ -281,6 +282,7 @@ ul {
   padding: 15px;
   border-radius: 5px;
   text-align: center;
+  position: relative;
 }
 
 .card--icon {
@@ -383,6 +385,13 @@ h3 {
 
 .card--image .date-time {
   color: var(--color-body);
+}
+
+.card--popular img {
+  height: 122px;
+  position: absolute;
+  top: -12px;
+  right: 12px;
 }
 
 .flex--row .card__heading {
