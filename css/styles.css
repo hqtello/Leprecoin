@@ -6,6 +6,8 @@
 /* Buttons */
 /* Inputs */
 /* Cards */
+/* Media */
+/* Quotes */
 /* General */
 
 :root {
@@ -396,6 +398,50 @@ h3 {
 
 .flex--row .card__heading {
   margin-left: 10px;
+}
+
+/* MEDIA */
+.media {
+}
+
+.media__header {
+  display: flex;
+  align-items: center;
+}
+
+.media__heading {
+  color: var(--color-secondary);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.media__content {
+  font-size: 1.6rem;
+  margin: 0;
+  margin-left: 33px;
+}
+
+/* QUOTES */
+.quote {
+  background: var(--color-headings);
+  padding: 1.5rem;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+  border-radius: 5px;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
 }
 
 /* GENERAL */
