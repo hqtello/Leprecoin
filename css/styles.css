@@ -9,6 +9,7 @@
 /* Media */
 /* Quotes */
 /* Grids */
+/* Testimonials */
 /* General */
 
 :root {
@@ -490,6 +491,32 @@ h3 {
 
   .grid--3x3 div:nth-of-type(7) {
     grid-column: 0;
+  }
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  background: var(--color-headings);
+  padding: 2rem;
+  text-align: left;
+}
+
+.testimonial__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonial .quote {
+  margin: 0;
+}
+
+.testimonial .media__heading {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote {
+    margin: 0 2rem;
   }
 }
 
