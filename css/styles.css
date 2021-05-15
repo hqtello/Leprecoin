@@ -10,6 +10,7 @@
 /* Quotes */
 /* Grids */
 /* Testimonials */
+/* Callouts */
 /* General */
 
 :root {
@@ -517,6 +518,61 @@ h3 {
 @media screen and (min-width: 768px) {
   .testimonial .quote {
     margin: 0 2rem;
+  }
+}
+
+/* CALLOUTS */
+.callout {
+  background: var(--color-accent);
+  padding: 2rem;
+  text-align: center;
+}
+
+.callout__pregame {
+  color: var(--color-headings);
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  margin: 0;
+}
+
+.callout__separator {
+  color: var(--color-headings);
+  font-weight: 700;
+  margin: 0;
+}
+
+.callout__title {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 1.2rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    text-align: left;
+  }
+
+  .callout .grid--1x2 {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .callout .button {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .callout__title {
+    font-size: 3rem;
+  }
+  .callout .button {
+    font-weight: 400;
+    letter-spacing: 3px;
   }
 }
 
