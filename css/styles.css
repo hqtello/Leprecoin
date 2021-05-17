@@ -11,6 +11,7 @@
 /* Grids */
 /* Testimonials */
 /* Callouts */
+/* Collapsibles */
 /* General */
 
 :root {
@@ -573,6 +574,53 @@ h3 {
   .callout .button {
     font-weight: 400;
     letter-spacing: 3px;
+  }
+}
+
+/* COLLAPSIBLES */
+.collapsible__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.collapsible__chevron {
+  cursor: pointer;
+  overflow: hidden;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.collapsible .icon {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible__heading {
+    font-size: 2.4rem;
   }
 }
 
