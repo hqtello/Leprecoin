@@ -12,6 +12,7 @@
 /* Testimonials */
 /* Callouts */
 /* Collapsibles */
+/* Blocks */
 /* General */
 
 :root {
@@ -42,7 +43,6 @@
 
 html {
   font-size: 62.5%;
-  padding: 30px;
 }
 
 body {
@@ -624,7 +624,27 @@ h3 {
   }
 }
 
+/* BLOCKS */
+.block {
+  padding: 6rem 2rem;
+  width: 100%;
+  border: 3px solid red;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
 /* GENERAL */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .flex--row {
   display: flex;
   align-items: center;
