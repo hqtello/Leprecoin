@@ -13,6 +13,7 @@
 /* Callouts */
 /* Collapsibles */
 /* Blocks */
+/* Navbar */
 /* General */
 
 :root {
@@ -135,6 +136,7 @@ ul {
 
 .icon--light {
   fill: var(--color-background);
+  stroke: var(--color-background);
 }
 
 .icon--cyberpunk {
@@ -637,6 +639,72 @@ h3 {
 
 .block__heading {
   margin-top: 0;
+}
+
+/* NAVBAR */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__brand {
+  width: 80px;
+}
+
+.nav__toggler {
+  cursor: pointer;
+  margin: 0 1.5rem;
+  width: 40px !important;
+  height: 40px !important;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.nav__list {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  border-bottom: 1px solid var(--color-cyberpunk);
+  padding: 1rem 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-headings);
+  transition: all 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-cyberpunk);
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.11);
+  border-radius: 3px;
+  opacity: 1;
+  stroke: var(--color-cyberpunk);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+    width: auto;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }
 
 /* GENERAL */
