@@ -15,6 +15,7 @@
 /* Blocks */
 /* Navbar */
 /* Hero */
+/* Domain Blocks */
 /* General */
 
 :root {
@@ -740,6 +741,33 @@ h3 {
   .hero__content {
     align-self: center;
     text-align: left;
+  }
+}
+
+/* DOMAIN BLOCKS */
+.block-domain__clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 7rem);
+  justify-items: center;
+  margin-top: 4rem;
+}
+
+.block-domain__clients .icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-body);
+}
+
+@media screen and (max-width: 767px) {
+  .block-domain__hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__clients {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
