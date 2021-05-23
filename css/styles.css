@@ -17,6 +17,7 @@
 /* Hero */
 /* Domain Blocks */
 /* Plans Block */
+/* Feature Block */
 /* General */
 
 :root {
@@ -801,6 +802,56 @@ h3 {
   .block-plans .card {
     min-width: 300px;
     max-width: 350px;
+  }
+}
+
+/* FEATURE BLOCK */
+.feature__content {
+  text-align: center;
+}
+
+.feature__heading {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.feature__paragraph {
+  color: var(--color-headings);
+  letter-spacing: 1.3px;
+  margin-top: 2rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+.feature .button {
+  margin: 0 auto;
+  width: auto;
+}
+
+.feature .grid {
+  gap: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__content {
+    align-self: center;
+    text-align: right;
+  }
+
+  .feature .button {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+    text-align: left;
+  }
+
+  .feature:nth-of-type(even) .button {
+    margin-left: 0;
   }
 }
 
