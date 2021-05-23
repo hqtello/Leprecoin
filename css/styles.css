@@ -16,6 +16,7 @@
 /* Navbar */
 /* Hero */
 /* Domain Blocks */
+/* Plans Block */
 /* General */
 
 :root {
@@ -290,10 +291,15 @@ ul {
     rgba(41, 44, 107, 1) 0%,
     rgba(51, 47, 186, 1) 100%
   );
-  padding: 15px;
   border-radius: 5px;
-  text-align: center;
+  padding: 15px;
   position: relative;
+  text-align: center;
+  transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card--icon {
@@ -407,6 +413,16 @@ h3 {
 
 .flex--row .card__heading {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card--popular {
+    transform: scale(1.1);
+  }
+
+  .card--popular:hover {
+    transform: scale(1.15);
+  }
 }
 
 /* MEDIA */
@@ -768,6 +784,23 @@ h3 {
 @media screen and (min-width: 768px) {
   .block-domain__clients {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* PLANS BLOCK */
+.block-plans .grid {
+  justify-items: center;
+  row-gap: 6rem;
+}
+
+.block-plans .card {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-plans .card {
+    min-width: 300px;
+    max-width: 350px;
   }
 }
 
