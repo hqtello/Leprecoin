@@ -18,6 +18,7 @@
 /* Domain Blocks */
 /* Plans Block */
 /* Feature Block */
+/* Information Block */
 /* General */
 
 :root {
@@ -224,7 +225,7 @@ ul {
 }
 
 .button--light:hover {
-  background: var(--color-secondary);
+  background: var(--color-accent);
   color: var(--color-headings);
 }
 
@@ -853,6 +854,28 @@ h3 {
   .feature:nth-of-type(even) .button {
     margin-left: 0;
   }
+}
+
+/* INFORMATION BLOCK */
+.information {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.information__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.information .button {
+  width: auto;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
 }
 
 /* GENERAL */
