@@ -20,6 +20,7 @@
 /* Feature Block */
 /* Information Block */
 /* Showcase Block */
+/* Testimonials Block */
 /* General */
 
 :root {
@@ -535,6 +536,10 @@ h3 {
   text-align: left;
 }
 
+.quote__text {
+  font-size: 2rem;
+}
+
 .testimonial__image {
   width: 100%;
   object-fit: cover;
@@ -549,6 +554,12 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial {
+    margin: 0 1.5rem;
+  }
+  .quote__text {
+    font-size: 1.8rem;
+  }
   .testimonial .quote {
     margin: 0 2rem;
   }
@@ -924,6 +935,26 @@ h3 {
 @media screen and (min-width: 375px) {
   .showcase .button {
     width: auto;
+  }
+}
+
+/* TESTIMONIALS BLOCK */
+.testimonials-block__heading {
+  text-align: center;
+}
+
+.testimonials-block .grid {
+  row-gap: 4rem;
+}
+.testimonials-block .hero__separator {
+  margin: 0 0 4rem;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials-block .grid--1x2 {
+    grid-template-columns: 1fr;
   }
 }
 
