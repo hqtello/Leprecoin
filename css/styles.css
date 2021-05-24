@@ -21,6 +21,7 @@
 /* Information Block */
 /* Showcase Block */
 /* Testimonials Block */
+/* Footer */
 /* General */
 
 :root {
@@ -955,6 +956,77 @@ h3 {
 @media screen and (max-width: 1024px) {
   .testimonials-block .grid--1x2 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER */
+.footer {
+  padding: 2rem;
+}
+
+.footer__section {
+  border-bottom: 1px solid var(--color-body);
+  padding: 2rem 0;
+}
+
+.footer__brand {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+
+.footer__brand img {
+  max-width: 200px;
+}
+
+.footer .list {
+  margin: 0;
+}
+
+.footer .list__item {
+  color: var(--color-body);
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+
+.footer .list__item:hover {
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__heading {
+    font-size: 2.2rem;
+  }
+
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    column-gap: 1rem;
+  }
+
+  .footer__section {
+    border-bottom: 0;
+  }
+
+  .footer__heading {
+    margin-bottom: 2rem;
+  }
+
+  .footer__brand {
+    margin-top: -10px;
+    order: -1;
+  }
+
+  .footer .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
   }
 }
 
