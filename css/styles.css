@@ -756,6 +756,10 @@ h3 {
   width: 80px;
 }
 
+.nav__brand img {
+  width: 80px;
+}
+
 .nav__toggler {
   cursor: pointer;
   margin: 0 1.5rem;
