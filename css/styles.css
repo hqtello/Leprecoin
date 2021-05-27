@@ -305,10 +305,20 @@ ul {
     rgba(51, 47, 186, 1) 100%
   );
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   position: relative;
   text-align: center;
   transition: transform 0.3s ease-out;
+}
+
+.card__heading {
+  font-size: 2.2rem;
+}
+
+.card .icon {
+  margin: 0 auto;
 }
 
 .card:hover {
@@ -337,6 +347,7 @@ ul {
   color: var(--color-headings);
   letter-spacing: 1.2px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .card h2 {
@@ -417,6 +428,15 @@ h3 {
   color: var(--color-body);
 }
 
+.card--justified-left {
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.card--justified-left .card__content {
+  text-align: left;
+}
+
 .card--popular img {
   height: 122px;
   position: absolute;
@@ -489,6 +509,11 @@ h3 {
 
 .grid--3x3 {
   gap: 20px;
+  padding: 0 2rem;
+}
+
+.grid--3x3 img {
+  max-height: 400px;
 }
 
 /* GRID--1X2 */
@@ -513,6 +538,10 @@ h3 {
 
   .grid--3x3 div:nth-of-type(1) {
     grid-column: 1 / -1;
+  }
+
+  .grid--3x3 div:nth-of-type(7) {
+    grid-column: 2 / -1;
   }
 }
 
@@ -605,6 +634,16 @@ h3 {
   .callout .button {
     width: auto;
   }
+
+  .callout--right {
+    max-width: 600px;
+    margin-left: auto;
+  }
+
+  .callout--left {
+    max-width: 600px;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -615,9 +654,32 @@ h3 {
   .callout__title {
     font-size: 3rem;
   }
+
   .callout .button {
     font-weight: 400;
     letter-spacing: 3px;
+  }
+
+  .callout--right {
+    max-width: 700px;
+    margin-left: auto;
+  }
+
+  .callout--left {
+    max-width: 700px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .callout--right {
+    max-width: 1000px;
+    margin-left: auto;
+  }
+
+  .callout--left {
+    max-width: 1000px;
+    margin-right: auto;
   }
 }
 
@@ -672,7 +734,6 @@ h3 {
 .block {
   padding: 6rem 2rem;
   width: 100%;
-  border: 3px solid red;
 }
 
 .block__header {
@@ -828,6 +889,10 @@ h3 {
 }
 
 /* FEATURE BLOCK */
+.feature {
+  padding-bottom: 0;
+}
+
 .feature__content {
   text-align: center;
 }
@@ -1036,6 +1101,11 @@ h3 {
   margin: 0 auto;
 }
 
+.container--margin-vertical {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .flex--row {
   display: flex;
   align-items: center;
@@ -1044,4 +1114,23 @@ h3 {
 .date-time {
   font-family: "Teko", sans-serif;
   letter-spacing: 3px;
+}
+
+.grid--gap-40 {
+  gap: 4rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.spacer {
+}
+
+.spacer--2rem {
+  margin: 2rem 0;
+}
+
+.spacer--7rem {
+  margin: 7rem 0;
 }

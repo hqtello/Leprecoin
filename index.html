@@ -4,42 +4,898 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A cryptocurrency that is bringing decentralization to data storage."
+    />
+    <meta property="og:title" content="Leprecoin" />
+    <meta
+      property="og:description"
+      content="A cryptocurrency that is bringing decentralization to data storage."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.svg" />
+    <!-- <meta property="og:url" content="https://whatever"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Teko:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Home</title>
+    <title>Leprecoin</title>
   </head>
   <body>
-    <ul class="list">
-      <li class="list__item">
-        <svg class="icon icon--bright">
-          <use href="assets/sprite.svg#bar-graph"></use>
+    <header>
+      <nav class="nav collapsible">
+        <a
+          href="/"
+          class="nav__brand"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out-cubic"
+          ><img src="assets/logo.svg" alt=""
+        /></a>
+        <svg class="icon icon--light nav__toggler">
+          <use href="assets/sprite.svg#menu"></use>
         </svg>
-        Item 1
-      </li>
-      <li class="list__item">
-        <svg class="icon">
-          <use href="assets/sprite.svg#bar-graph"></use>
-        </svg>
-        Item 2
-      </li>
-      <li class="list__item">
-        <svg class="icon">
-          <use href="assets/sprite.svg#bar-graph"></use>
-        </svg>
-        Item 3
-      </li>
-      <li class="list__item">
-        <svg class="icon">
-          <use href="assets/sprite.svg#bar-graph"></use>
-        </svg>
-        Item 4
-      </li>
-    </ul>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Use Leprecoin</a></li>
+          <li class="nav__item"><a href="#">Technology</a></li>
+          <li class="nav__item"><a href="#">Developers</a></li>
+          <li class="nav__item"><a href="#">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="information">
+        <h2>Welcome to Leprecoin</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          reprehenderit sunt numquam ipsum nulla. Soluta tempora maxime, dolore
+          officia architecto inventore eaque eligendi voluptate iste?
+        </p>
+        <div class="information__buttons">
+          <button class="button button--accent button--block">
+            Explore Ethereum
+          </button>
+        </div>
+      </section>
+
+      <section class="block container" data-aos="fade-up">
+        <div class="grid grid--1x3 grid--gap-40">
+          <div class="card card--icon">
+            <img src="art/laptop.svg" alt="" class="icon icon--card" />
+            <div class="card__header">
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, tempore est inventore explicabo maiores magnam ipsum
+                dolore rem? Doloremque aspernatur aut mollitia, quis modi harum
+                sunt nemo eaque vitae deleniti!
+              </p>
+            </div>
+          </div>
+          <div class="card card--icon">
+            <img src="art/sci-fi.svg" alt="" class="icon icon--card" />
+            <div class="card__header">
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, tempore est inventore explicabo maiores magnam ipsum
+                dolore rem? Doloremque aspernatur aut mollitia, quis modi harum
+                sunt nemo eaque vitae deleniti!
+              </p>
+            </div>
+          </div>
+          <div class="card card--icon">
+            <img src="art/cube-coin.svg" alt="" class="icon icon--card" />
+            <div class="card__header">
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, tempore est inventore explicabo maiores magnam ipsum
+                dolore rem? Doloremque aspernatur aut mollitia, quis modi harum
+                sunt nemo eaque vitae deleniti!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block hero">
+        <div class="container grid grid--1x2">
+          <header class="block__header hero__content">
+            <h1 class="hero__heading">Get Started</h1>
+            <span class="hero__separator">______</span>
+            <p class="hero__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, quo? Reprehenderit earum nostrum nesciunt error
+              quibusdam, ipsam numquam quam explicabo?
+            </p>
+            <a href="#" class="button button--secondary">Learn Now</a>
+          </header>
+          <img
+            class="hero__image"
+            src="art/cube-coin.svg"
+            alt=""
+            data-aos="flip-right"
+            data-aos-duration="3000"
+          />
+        </div>
+      </section>
+
+      <section class="information">
+        <h2>What is the Blockchain?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          reprehenderit sunt numquam ipsum nulla. Soluta tempora maxime, dolore
+          officia architecto inventore eaque eligendi voluptate iste?
+        </p>
+        <div class="information__buttons">
+          <button class="button button--accent button--block">
+            Learn more
+          </button>
+          <button class="button button--light button--block">
+            Our Courses
+          </button>
+        </div>
+      </section>
+
+      <div class="spacer spacer--7rem"></div>
+
+      <div class="grid grid--3x3 container">
+        <div data-aos="fade-right">
+          <h1 class="hero__heading">Why Invest in Leprecoin?</h1>
+          <span class="hero__separator">______</span>
+          <p class="hero__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+            quo? Reprehenderit earum nostrum nesciunt error quibusdam, ipsam
+            numquam quam explicabo?
+          </p>
+          <a href="#" class="button button--secondary">Invest Today</a>
+        </div>
+        <div class="card card--icon card--justified-left">
+          <div class="card__header flex--row">
+            <svg class="icon icon--cyberpunk">
+              <use href="assets/sprite.svg#bar-graph"></use>
+            </svg>
+            <h2 class="card__heading">Title goes here</h2>
+          </div>
+          <div class="card__body">
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam fugit rerum iste commodi nesciunt temporibus quae natus
+              dicta sequi eum qui, autem atque. Provident, quis!
+            </p>
+          </div>
+        </div>
+        <div class="card card--icon card--justified-left">
+          <div class="card__header flex--row">
+            <svg class="icon icon--cyberpunk">
+              <use href="assets/sprite.svg#bar-graph"></use>
+            </svg>
+            <h2 class="card__heading">Title goes here</h2>
+          </div>
+          <div class="card__body">
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam fugit rerum iste commodi nesciunt temporibus quae natus
+              dicta sequi eum qui, autem atque. Provident, quis!
+            </p>
+          </div>
+        </div>
+        <div class="card card--icon card--justified-left">
+          <div class="card__header flex--row">
+            <svg class="icon icon--cyberpunk">
+              <use href="assets/sprite.svg#bar-graph"></use>
+            </svg>
+            <h2 class="card__heading">Title goes here</h2>
+          </div>
+          <div class="card__body">
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam fugit rerum iste commodi nesciunt temporibus quae natus
+              dicta sequi eum qui, autem atque. Provident, quis!
+            </p>
+          </div>
+        </div>
+        <div class="card card--icon card--justified-left">
+          <div class="card__header flex--row">
+            <svg class="icon icon--cyberpunk">
+              <use href="assets/sprite.svg#bar-graph"></use>
+            </svg>
+            <h2 class="card__heading">Title goes here</h2>
+          </div>
+          <div class="card__body">
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam fugit rerum iste commodi nesciunt temporibus quae natus
+              dicta sequi eum qui, autem atque. Provident, quis!
+            </p>
+          </div>
+        </div>
+        <div class="card card--icon card--justified-left">
+          <div class="card__header flex--row">
+            <svg class="icon icon--cyberpunk">
+              <use href="assets/sprite.svg#bar-graph"></use>
+            </svg>
+            <h2 class="card__heading">Title goes here</h2>
+          </div>
+          <div class="card__body">
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam fugit rerum iste commodi nesciunt temporibus quae natus
+              dicta sequi eum qui, autem atque. Provident, quis!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="art/sci-fi.svg" alt="" data-aos="zoom-in" />
+        </div>
+      </div>
+
+      <section
+        class="
+          container--margin-vertical
+          callout callout--primary callout--right
+        "
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
+        <div class="grid grid--1x2">
+          <div>
+            <p class="callout__pregame">Knowledge is power!</p>
+            <p class="callout__separator">______</p>
+            <h2 class="callout__title">
+              Want to learn more about blockchain?.
+            </h2>
+            <button class="button button--secondary button--block">
+              Learn More
+            </button>
+          </div>
+          <div></div>
+        </div>
+      </section>
+
+      <section class="container text--center">
+        <h2>Blog</h2>
+        <span class="hero__separator">______</span>
+      </section>
+
+      <section class="block container">
+        <div class="grid grid--1x3 grid--gap-40">
+          <div class="card card--image">
+            <div class="card__header">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="card__image"
+              />
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <time datetime="2021-05-11 10:54" class="date-time"
+                >May 5th 2021</time
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                laboriosam, perferendis ut exercitationem fugiat deleniti
+                assumenda repudiandae sunt doloribus ex!
+              </p>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="card__header">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="card__image"
+              />
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <time datetime="2021-05-11 10:54" class="date-time"
+                >May 5th 2021</time
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                laboriosam, perferendis ut exercitationem fugiat deleniti
+                assumenda repudiandae sunt doloribus ex!
+              </p>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="card__header">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="card__image"
+              />
+              <h2 class="card__heading">Title goes here</h2>
+            </div>
+            <div class="card__body">
+              <time datetime="2021-05-11 10:54" class="date-time"
+                >May 5th 2021</time
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                laboriosam, perferendis ut exercitationem fugiat deleniti
+                assumenda repudiandae sunt doloribus ex!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-block">
+        <div class="container">
+          <h2 class="testimonials-block__heading">
+            What our customers are saying?
+          </h2>
+          <span class="hero__separator">______</span>
+          <div class="grid grid--1x2">
+            <div
+              class="card testimonial"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="grid grid--1x2">
+                <img
+                  src="./assets/hugo-tello-pic.jpg"
+                  class="testimonial__image"
+                  alt="A happy customer"
+                />
+                <blockquote class="quote">
+                  <p class="quote__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    optio amet magni quam rem recusandae! Nostrum quas minima
+                    enim consequuntur excepturi, numquam nihil sint autem, vel
+                    aliquid vitae ullam omnis?
+                  </p>
+                  <footer>
+                    <div class="media">
+                      <div class="media__header">
+                        <svg class="icon">
+                          <use href="assets/sprite.svg#quote"></use>
+                        </svg>
+                        <h2 class="media__heading">Hugo Tello</h2>
+                      </div>
+                      <div class="media__body">
+                        <p class="media__content">Codeink Design</p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+            <div
+              class="card testimonial"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="grid grid--1x2">
+                <img
+                  src="./assets/Hugo-Tello-profile.jpg"
+                  class="testimonial__image"
+                  alt="A happy customer"
+                />
+                <blockquote class="quote">
+                  <p class="quote__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda necessitatibus illum libero sequi iste ipsam saepe
+                    beatae quod, sed possimus pariatur, quo dolore facere ipsum
+                    doloremque! Veniam, repudiandae debitis? Distinctio?
+                  </p>
+                  <footer>
+                    <div class="media">
+                      <div class="media__header">
+                        <svg class="icon">
+                          <use href="assets/sprite.svg#quote"></use>
+                        </svg>
+                        <h2 class="media__heading">Andres Encalada</h2>
+                      </div>
+                      <div class="media__body">
+                        <p class="media__content">Codecamp CA</p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block hero">
+        <div class="container grid grid--1x2">
+          <header class="block__header hero__content">
+            <h1 class="hero__heading">Your Money Is Safe With Us!</h1>
+            <span class="hero__separator">______</span>
+            <p class="hero__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, quo? Reprehenderit earum nostrum nesciunt error
+              quibusdam, ipsam numquam quam explicabo?
+            </p>
+            <a href="#" class="button button--secondary">Learn More</a>
+          </header>
+          <img class="hero__image" src="art/cube-coin.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="block container showcase">
+        <div class="grid grid--1x2">
+          <div class="showcase__content">
+            <h3>We Are Leaders in Cybersecurity.</h3>
+            <span class="hero__separator">______</span>
+            <p class="showcase__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              voluptatem magni, tempora, id, fuga quia cum laudantium maxime
+              dicta veniam nemo sed explicabo eligendi nesciunt?
+            </p>
+            <img class="showcase__image" src="art/sci-fi.svg" alt="" />
+          </div>
+          <div
+            class="showcase__list"
+            data-aos="flip-right"
+            data-aos-duration="3000"
+          >
+            <ul class="list">
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Security</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Transactions</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Velocity</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Cloud Storage</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+            </ul>
+            <button class="button button--primary button--block">
+              Our Hackers
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          reprehenderit sunt numquam ipsum nulla. Soluta tempora maxime, dolore
+          officia architecto inventore eaque eligendi voluptate iste?
+        </p>
+        <div class="information__buttons">
+          <button class="button button--accent button--block">
+            Our Consultants
+          </button>
+          <button class="button button--light button--block">
+            Exchange Services
+          </button>
+        </div>
+      </section>
+
+      <section class="block feature">
+        <div class="container grid grid--1x2">
+          <div
+            class="feature__content"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3 class="feature__heading">Lorem ipsum dolor sit amet.</h3>
+            <span class="hero__separator">______</span>
+            <p class="feature__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              soluta. Illo doloremque omnis obcaecati ut veritatis, libero
+              eligendi eveniet molestiae laborum ea consequuntur sint vel?
+            </p>
+            <button class="button button--secondary button--block">
+              Secondary button
+            </button>
+          </div>
+          <img
+            class="feature__image"
+            src="art/laptop.svg"
+            alt=""
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          />
+        </div>
+      </section>
+      <section class="block feature">
+        <div class="container grid grid--1x2">
+          <div
+            class="feature__content"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3 class="feature__heading">Lorem ipsum dolor sit amet.</h3>
+            <span class="hero__separator">______</span>
+            <p class="feature__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              soluta. Illo doloremque omnis obcaecati ut veritatis, libero
+              eligendi eveniet molestiae laborum ea consequuntur sint vel?
+            </p>
+            <button class="button button--secondary button--block">
+              Secondary button
+            </button>
+          </div>
+          <img
+            class="feature__image"
+            src="art/cube-coin.svg"
+            alt=""
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          />
+        </div>
+      </section>
+      <section class="block feature">
+        <div class="container grid grid--1x2">
+          <div
+            class="feature__content"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h3 class="feature__heading">Lorem ipsum dolor sit amet.</h3>
+            <span class="hero__separator">______</span>
+            <p class="feature__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              soluta. Illo doloremque omnis obcaecati ut veritatis, libero
+              eligendi eveniet molestiae laborum ea consequuntur sint vel?
+            </p>
+            <button class="button button--secondary button--block">
+              Secondary button
+            </button>
+          </div>
+          <img
+            class="feature__image"
+            src="art/sci-fi.svg"
+            alt=""
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          />
+        </div>
+      </section>
+
+      <div
+        class="
+          callout callout--primary callout--left
+          container--margin-vertical
+        "
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        <div class="grid grid--1x2">
+          <div>
+            <p class="callout__pregame">Learn about our story.</p>
+            <p class="callout__separator">______</p>
+            <h2 class="callout__title">Where We Came From?</h2>
+            <button class="button button--secondary button--block">
+              Read More
+            </button>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+      <section class="block container">
+        <div class="block__header">
+          <h2>Some of Our Clients</h2>
+          <span class="hero__separator">______</span>
+        </div>
+        <ul class="list block-domain__clients">
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-one"></use>
+            </svg>
+          </li>
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-two"></use>
+            </svg>
+          </li>
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-three"></use>
+            </svg>
+          </li>
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-four"></use>
+            </svg>
+          </li>
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-five"></use>
+            </svg>
+          </li>
+          <li class="list__item">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-six"></use>
+            </svg>
+          </li>
+          <li class="list__item block-domain__hidden">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-seven"></use>
+            </svg>
+          </li>
+          <li class="list__item block-domain__hidden">
+            <svg class="icon">
+              <use href="assets/sprite.svg#logo-eight"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block container showcase">
+        <div class="grid grid--1x2">
+          <div class="showcase__content">
+            <h3>Why Start Now? Why Choosing Leprecoin?</h3>
+            <span class="hero__separator">______</span>
+            <p class="showcase__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              voluptatem magni, tempora, id, fuga quia cum laudantium maxime
+              dicta veniam nemo sed explicabo eligendi nesciunt?
+            </p>
+            <img class="showcase__image" src="art/sci-fi.svg" alt="" />
+          </div>
+          <div class="showcase__list">
+            <ul class="list">
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Decentralization</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Low Fees</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Fast Transactions</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+              <li class="list__item">
+                <svg class="icon icon--light">
+                  <use href="assets/sprite.svg#bar-graph"></use>
+                </svg>
+                <h4>Security</h4>
+                <p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, ipsum.</small
+                  >
+                </p>
+              </li>
+            </ul>
+            <button class="button button--primary button--block">
+              Get Started!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="block container block-plans">
+        <div class="grid grid--1x2">
+          <div class="card">
+            <div class="card__header">
+              <h2 class="card__heading">Basic</h2>
+              <h3 class="card__subheading">Get Started</h3>
+              <h4>
+                <span class="card__price">
+                  <span class="card__dollar">$</span>70<span class="card__year"
+                    >/year</span
+                  ></span
+                >
+              </h4>
+            </div>
+            <div class="card__body">
+              <ul class="list">
+                <li class="list__item">Up to 5k transactions</li>
+                <li class="list__item">24/7 customer service</li>
+                <li class="list__item">10 free tokens</li>
+                <li class="list__item">Credit Card</li>
+                <li class="list__item">Full protection</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <button class="button button--accent button--block">
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <div class="card card--popular">
+            <img src="art/popular.svg" alt="" />
+            <div class="card__header">
+              <h2 class="card__heading">Premium</h2>
+              <h3 class="card__subheading">Go Pro!</h3>
+              <h4>
+                <span class="card__price">
+                  <span class="card__dollar">$</span>120<span class="card__year"
+                    >/year</span
+                  ></span
+                >
+              </h4>
+            </div>
+            <div class="card__body">
+              <ul class="list">
+                <li class="list__item">All basic features</li>
+                <li class="list__item">Unlimited transactions</li>
+                <li class="list__item">Compound earnings</li>
+                <li class="list__item">Lower fees</li>
+                <li class="list__item">Free consulting</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <button class="button button--accent button--block">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <br />
+
+    <footer class="footer">
+      <div class="grid footer__sections">
+        <section>
+          <div class="collapsible footer__section">
+            <div class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">
+                Leprecoin Store
+              </h2>
+              <svg class="icon icon--light collapsible__chevron">
+                <use href="assets/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li class="list__item">Products</li>
+                <li class="list__item">What's New</li>
+                <li class="list__item">Passive Income</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="collapsible footer__section">
+            <div class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">
+                Our Community
+              </h2>
+              <svg class="icon icon--light collapsible__chevron">
+                <use href="assets/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li class="list__item">Developers</li>
+                <li class="list__item">Collaborators</li>
+                <li class="list__item">Enthusiasts</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="collapsible footer__section">
+            <div class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Help</h2>
+              <svg class="icon icon--light collapsible__chevron">
+                <use href="assets/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li class="list__item">Customer Service</li>
+                <li class="list__item">Contact Us</li>
+                <li class="list__item">FAQ</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img
+            src="assets/logo.svg"
+            alt=""
+            data-aos="flip-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-cubic"
+          />
+          <p class="footer__copyright">Copyright 2021 Hugo Tello</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
